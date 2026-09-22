@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FATUM AUTO — авто из Кореи под ключ в Уфе и по России</title>
+<meta name="description" content="Подбор, проверка, выкуп и доставка автомобилей из Кореи под ключ. Постановка на учёт в России и Кыргызстане, помощь с видом на жительство (ВНЖ) и документами. Уфа, Башкортостан, вся Россия. Опыт более 5 лет.">
+
+<!--
+==========================================================================
+  ЧТО ЗАМЕНИТЬ ПЕРЕД ПУБЛИКАЦИЕЙ   (поиск по слову: ЗАМЕНИТЬ)
+==========================================================================
+  1. Телефон, WhatsApp, Instagram — блоки в секции «Контакты» закомментированы.
+     Раскомментируйте нужные и подставьте свои данные.
+  2. Telegram уже проставлен: кнопки «Написать» ведут в личку @yangirovvv_1,
+     кнопки «Telegram-канал» — на @korea_auto02. Адрес для заявок из
+     калькулятора лежит в js/main.js, переменная TELEGRAM_URL.
+  3. Домен сайта — в og:url и в JSON-LD ниже.
+==========================================================================
+-->
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="FATUM AUTO — авто из Кореи под ключ">
+<meta property="og:description" content="Подбор, проверка и доставка автомобилей из Кореи. Учёт РФ и Кыргызстан. Уфа и вся Россия.">
+<!-- ЗАМЕНИТЬ на ваш домен в обеих строках: путь обязан быть абсолютным,
+     иначе Telegram и другие мессенджеры не покажут картинку в превью ссылки -->
+<meta property="og:image" content="https://fatum-auto.ru/assets/banner.jpg">
+<meta property="og:url" content="https://fatum-auto.ru">
+<meta property="og:locale" content="ru_RU">
+<meta name="theme-color" content="#080B12">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "name": "FATUM AUTO",
+  "description": "Подбор, проверка и доставка автомобилей из Кореи под ключ. Постановка на учёт в РФ и Кыргызстане.",
+  "image": "https://fatum-auto.ru/assets/logo.jpg",
+  "url": "https://fatum-auto.ru",
+  "areaServed": "RU",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Уфа",
+    "addressRegion": "Республика Башкортостан",
+    "addressCountry": "RU"
+  },
+  "sameAs": ["https://t.me/korea_auto02", "https://t.me/yangirovvv_1"]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-glow bg-glow--one"></div>
+  <div class="bg-glow bg-glow--two"></div>
+  <div class="bg-grid"></div>
+</div>
+
+<!-- ================= ХЕДЕР ================= -->
+<header class="header" id="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="#top" aria-label="FATUM AUTO — на главную">
+      <svg class="brand__mark" viewBox="0 0 64 24" aria-hidden="true">
+        <path d="M2 18c6-1 10-3 16-7 5-3.4 10-5.6 16-6.4 8-1 20 .4 28 5.4-7-2-15-2.6-22-1.6-7 1-13 3.4-19 6.2C16 17 9 18.6 2 18z"/>
+        <path d="M14 19.4c5.6-.8 10-2.4 15.4-5 4.6-2.2 9.6-3.8 15-4.2-5 1.6-9.2 3.4-13.8 5.6-5 2.4-10.2 3.8-16.6 3.6z" opacity=".55"/>
+      </svg>
+      <span class="brand__text">
+        <span class="brand__name">FATUM AUTO</span>
+        <span class="brand__sub">Авто из Кореи под ключ</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#registration">Оформление</a>
+      <a href="#cases">Примеры</a>
+      <a href="#calc">Расчёт</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <a class="btn btn--sm btn--primary header__cta" href="https://t.me/yangirovvv_1" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.3-.1-.5-.6-.2L6.2 13.1l-4.8-1.5c-1-.3-1.1-1 .2-1.5L20.5 2.8c.9-.3 1.6.2 1.4 1.5z"/></svg>
+      Написать
+    </a>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= ГЛАВНЫЙ ЭКРАН ================= -->
+<section class="hero" id="top">
+  <div class="wrap hero__inner">
+
+    <div class="hero__logo reveal">
+      <img src="assets/logo.jpg" alt="Логотип FATUM AUTO" width="1280" height="853">
+    </div>
+
+    <p class="eyebrow reveal">Уфа &middot; Башкортостан &middot; по всей России</p>
+
+    <h1 class="hero__title reveal">
+      Привезём автомобиль<br>
+      <span class="chrome">из Кореи под ключ</span>
+    </h1>
+
+    <p class="hero__lead reveal">
+      Подбираем, проверяем, выкупаем и доставляем автомобиль из Кореи.
+      Ставим на учёт в России или Кыргызстане — с полным сопровождением документов.
+      Меня зовут <strong>Аршат</strong>, занимаюсь этим более пяти лет.
+    </p>
+
+    <div class="hero__actions reveal">
+      <a class="btn btn--primary btn--lg" href="#calc">
+        Узнать стоимость
+        <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 12h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn--ghost btn--lg" href="https://t.me/korea_auto02" target="_blank" rel="noopener">
+        Telegram-канал
+      </a>
+    </div>
+
+    <ul class="hero__stats reveal">
+      <li><b>5+ лет</b><span>подбираем авто в Корее</span></li>
+      <li><b>от 1 млн ₽</b><span>бюджет под ключ</span></li>
+      <li><b>Hyundai · Kia · Genesis</b><span>и другие марки</span></li>
+      <li><b>РФ и Кыргызстан</b><span>учёт на выбор</span></li>
+    </ul>
+
+  </div>
+  <div class="hero__fade" aria-hidden="true"></div>
+</section>
+
+<!-- ================= ЧТО ДЕЛАЕМ ================= -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Что делаем</p>
+      <h2 class="section__title">Полный цикл — от заявки до ключей</h2>
+      <p class="section__lead">
+        Вы называете желаемую машину и бюджет. Всё остальное берём на себя:
+        ищем, проверяем, выкупаем, везём и оформляем.
+      </p>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="card reveal">
+        <div class="card__ico">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16.5 16.5 4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Подбор</h3>
+        <p>Отбираем варианты на корейских площадках под ваш бюджет, год и комплектацию. Показываем несколько машин на выбор, а не одну «единственную».</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__ico">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.2 8.2 8 9 4.8-.8 8-4.5 8-9V6l-8-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m8.8 12 2.2 2.2 4.2-4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Проверка и видеообзор</h3>
+        <p>Смотрим историю автомобиля, состояние кузова, салона и комплектацию. Присылаем подробное видео до покупки — вы видите машину своими глазами.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__ico">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16v10H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 8V6h16v2M9 13h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Выкуп</h3>
+        <p>Выкупаем автомобиль у продавца в Корее. До оплаты вы точно знаете, кто продавец, как проходит платёж и какие документы вы получите.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__ico">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 17h20M4 17V9l5-3 5 3v8M14 12h5l1 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg>
+        </div>
+        <h3>Доставка</h3>
+        <p>Морем до Владивостока, дальше автовозом до вашего города. Держим в курсе на каждом этапе — где машина и что с ней происходит.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__ico">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V6a2 2 0 0 1 2-2h8l6 6v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 4v6h6M8 14h8M8 17h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Таможня и расчёт</h3>
+        <p>Считаем полную сумму до вашего города: цена авто, доставка, пошлины и остальные расходы. Без «всплывающих» доплат в конце.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__ico">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="9" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m12 12 8 8m-3 0 3-3m-5-2 2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Учёт и документы</h3>
+        <p>Ставим на учёт в России или Кыргызстане. Если нужно — помогаем оформить вид на жительство и остальные бумаги. Сопровождаем до конца.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= УЧЁТ ================= -->
+<section class="section section--alt" id="registration">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Постановка на учёт</p>
+      <h2 class="section__title">Два варианта — выбираете вы</h2>
+      <p class="section__lead">
+        У каждого варианта своя логика по деньгам и срокам. Расскажем честно,
+        что выгоднее именно в вашей ситуации, и оформим под ключ.
+      </p>
+    </div>
+
+    <div class="grid grid--2">
+      <article class="panel reveal">
+        <div class="panel__flag" aria-hidden="true">РФ</div>
+        <h3>Учёт в России</h3>
+        <p class="panel__lead">
+          Классический путь: полная растаможка, оформление и российские номера.
+          Машина полностью ваша, без ограничений по регионам и срокам.
+        </p>
+        <ul class="ticks">
+          <li>Полная растаможка и таможенное оформление</li>
+          <li>Оформление всех необходимых документов</li>
+          <li>Постановка на учёт и российские номера</li>
+          <li>Все документы на ваше имя</li>
+        </ul>
+      </article>
+
+      <article class="panel panel--accent reveal">
+        <div class="panel__flag" aria-hidden="true">КГ</div>
+        <h3>Киргизский учёт</h3>
+        <p class="panel__lead">
+          Подбираем в Корее, выкупаем, доставляем в Кыргызстан, ставим на учёт
+          и пригоняем к вам. Часто заметно дешевле по итоговой сумме.
+        </p>
+        <ul class="ticks">
+          <li>Оформление в Кыргызстане под ключ</li>
+          <li>Полное сопровождение по документам</li>
+          <li>Помощь с видом на жительство и другими бумагами</li>
+          <li>Доставка готовой машины до вашего города</li>
+        </ul>
+        <p class="panel__note">
+          Пример из практики: Hyundai Avante 2021 на киргизском учёте обошёлся клиенту
+          в <b>1 150 000 ₽</b> под ключ до Уфы.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КАК РАБОТАЕМ ================= -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Как мы работаем</p>
+      <h2 class="section__title">Шесть шагов до ваших ключей</h2>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step__num">01</span>
+        <h3>Заявка и бюджет</h3>
+        <p>Вы присылаете желаемую машину, год и максимальный бюджет. Расчёт вариантов — бесплатно.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">02</span>
+        <h3>Подбор в Корее</h3>
+        <p>Отбираем подходящие автомобили на корейских площадках и присылаем вам варианты с ценами.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">03</span>
+        <h3>Проверка и видео</h3>
+        <p>Проверяем историю и состояние, снимаем подробный видеообзор: кузов, салон, комплектация.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">04</span>
+        <h3>Выкуп</h3>
+        <p>После вашего одобрения выкупаем автомобиль и готовим его к отправке.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">05</span>
+        <h3>Доставка</h3>
+        <p>Морем в порт, оформление, затем автовозом до вашего города. Сообщаем статус на каждом этапе.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">06</span>
+        <h3>Учёт и выдача</h3>
+        <p>Ставим на учёт в РФ или Кыргызстане, передаём вам автомобиль и полный пакет документов.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= РЕАЛЬНЫЕ РАСЧЁТЫ ================= -->
+<section class="section section--alt" id="cases">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Что мы привезли</p>
+      <h2 class="section__title">Наши автомобили и честные цифры</h2>
+      <p class="section__lead">
+        Показываем реальные машины и реальные суммы, а не красивые картинки из интернета.
+        Вот две машины, которые мы привезли клиентам, и во сколько они обошлись.
+      </p>
+    </div>
+
+    <div class="grid grid--2">
+
+      <article class="case reveal">
+        <div class="case__media">
+          <img src="assets/cars/kia-k5.jpg" alt="Kia K5 2021 года в чёрном цвете" loading="lazy" width="640" height="360">
+        </div>
+        <p class="case__strip case__strip--note">Фото с корейской площадки, где мы выкупали этот автомобиль</p>
+        <div class="case__body">
+          <header class="case__head">
+            <h3>Kia K5</h3>
+            <span class="badge">Учёт РФ</span>
+          </header>
+          <ul class="specs">
+            <li><span>Год</span><b>2021</b></li>
+            <li><span>Двигатель</span><b>1.6</b></li>
+            <li><span>Пробег</span><b>60 200 км</b></li>
+            <li><span>Цвет</span><b>Чёрный</b></li>
+          </ul>
+          <ul class="breakdown">
+            <li><span>Автомобиль в Корее</span><b>14 555 $</b></li>
+            <li><span>Доставка до Владивостока</span><b>1 000 $</b></li>
+            <li><span>Таможня и расходы</span><b>400 000 ₽</b></li>
+            <li><span>Доставка по России</span><b>170 000 ₽</b></li>
+          </ul>
+          <div class="case__total">
+            <span>Под ключ в Уфу</span>
+            <b>≈ 1 950 000 ₽</b>
+          </div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case__media case__media--gallery">
+          <img src="assets/cars/hyundai-avante.jpg" alt="Hyundai Avante 2021 года, синий, на киргизском учёте" loading="lazy" width="600" height="800" class="is-active">
+          <img src="assets/cars/hyundai-avante-interior.jpg" alt="Салон Hyundai Avante: светлый кожаный интерьер, цифровая панель приборов" loading="lazy" width="600" height="800">
+        </div>
+        <div class="case__strip case__strip--switch" data-gallery="avante">
+          <button type="button" class="is-active" aria-pressed="true">Снаружи</button>
+          <button type="button" aria-pressed="false">Салон</button>
+        </div>
+        <div class="case__body">
+          <header class="case__head">
+            <h3>Hyundai Avante CN7</h3>
+            <span class="badge badge--accent">Киргизский учёт</span>
+          </header>
+          <ul class="specs">
+            <li><span>Год</span><b>2021</b></li>
+            <li><span>Поколение</span><b>CN7</b></li>
+            <li><span>Комплектация</span><b>Максимальная</b></li>
+            <li><span>Цвет</span><b>Синий</b></li>
+          </ul>
+          <p class="case__text">
+            Подобрали в Корее по запросу клиента, выкупили, доставили в Кыргызстан,
+            поставили на учёт и пригнали в Уфу. Техническое состояние — идеальное.
+          </p>
+          <div class="case__total">
+            <span>Под ключ до Уфы</span>
+            <b>1 150 000 ₽</b>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="disclaimer reveal">
+      Суммы указаны на момент сделки. Курс валют, пошлины и сборы меняются,
+      поэтому итоговый расчёт по вашей машине делаем индивидуально и показываем до покупки.
+    </p>
+  </div>
+</section>
+
+<!-- ================= КАЛЬКУЛЯТОР ЗАЯВКИ ================= -->
+<section class="section" id="calc">
+  <div class="wrap">
+    <div class="calc reveal">
+      <div class="calc__left">
+        <p class="eyebrow">Бесплатный расчёт</p>
+        <h2 class="section__title">Узнайте, что можно привезти <br>в ваш бюджет</h2>
+        <p class="section__lead">
+          Заполните три поля — соберём сообщение с вашим запросом,
+          останется отправить его в Telegram. Посчитаем варианты бесплатно
+          и покажем полную стоимость до вашего города.
+        </p>
+        <ul class="ticks ticks--sm">
+          <li>Расчёт ни к чему не обязывает</li>
+          <li>Покажем несколько вариантов под бюджет</li>
+          <li>Ответим в течение дня</li>
+        </ul>
+      </div>
+
+      <form class="calc__form" id="calcForm" novalidate>
+        <div class="field">
+          <label for="f-car">Желаемый автомобиль</label>
+          <input type="text" id="f-car" name="car" placeholder="Например: Kia K5" autocomplete="off">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-year">Год</label>
+            <input type="text" id="f-year" name="year" placeholder="2021" inputmode="numeric" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="f-budget">Бюджет, ₽</label>
+            <input type="text" id="f-budget" name="budget" placeholder="2 000 000" inputmode="numeric" autocomplete="off">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-name">Как к вам обращаться <span class="opt">(необязательно)</span></label>
+          <input type="text" id="f-name" name="name" placeholder="Имя" autocomplete="given-name">
+        </div>
+
+        <div class="preview">
+          <span class="preview__label">Сообщение для отправки</span>
+          <p class="preview__text" id="calcPreview">РАСЧЁТ</p>
+        </div>
+
+        <button class="btn btn--primary btn--lg btn--block" type="submit" id="calcSend">
+          <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><rect x="9" y="9" width="11" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15 6H6a2 2 0 0 0-2 2v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Скопировать заявку
+        </button>
+
+        <p class="calc__status" id="calcStatus" role="status" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Заявка скопирована. Откройте Telegram и вставьте её в чат — ответим и посчитаем варианты.</span>
+        </p>
+
+        <a class="btn btn--ghost btn--lg btn--block" id="calcOpen" href="https://t.me/yangirovvv_1" target="_blank" rel="noopener" hidden>
+          Открыть Telegram
+          <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 12h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <p class="calc__hint">Заявка не отправляется сама: сначала копируем текст, затем вы вставляете его в чат и отправляете.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= НА ЧТО СМОТРЕТЬ ================= -->
+<section class="section section--alt" id="tips">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Полезно знать</p>
+      <h2 class="section__title">5 ошибок при покупке авто из Кореи</h2>
+      <p class="section__lead">
+        Даже если повезёте машину не с нами — эти пункты сэкономят вам деньги и нервы.
+      </p>
+    </div>
+
+    <div class="grid grid--2 tips">
+      <article class="tip reveal">
+        <span class="tip__num">1</span>
+        <div>
+          <h3>Смотреть только на цену в Корее</h3>
+          <p>Низкая цена на площадке не означает низкую конечную стоимость. Считать нужно всю сумму до России: доставку, пошлины и остальные расходы.</p>
+        </div>
+      </article>
+      <article class="tip reveal">
+        <span class="tip__num">2</span>
+        <div>
+          <h3>Не проверять историю автомобиля</h3>
+          <p>Красивые фотографии ничего не гарантируют. Историю и реальное состояние нужно проверять до покупки, а не после доставки.</p>
+        </div>
+      </article>
+      <article class="tip reveal">
+        <span class="tip__num">3</span>
+        <div>
+          <h3>Выбирать машину только по комплектации</h3>
+          <p>Богатая комплектация не всегда оправдывает разницу в цене. Смотреть надо на конкретный автомобиль: состояние, пробег и историю.</p>
+        </div>
+      </article>
+      <article class="tip reveal">
+        <span class="tip__num">4</span>
+        <div>
+          <h3>Не учитывать дополнительные расходы</h3>
+          <p>Цена автомобиля в Корее не равна цене автомобиля у вас во дворе. Итоговую сумму лучше знать заранее и с максимальной точностью.</p>
+        </div>
+      </article>
+      <article class="tip reveal tip--wide">
+        <span class="tip__num">5</span>
+        <div>
+          <h3>Вносить деньги, не понимая схему</h3>
+          <p>До оплаты должно быть понятно: кто продавец, кто занимается покупкой, как проходит оплата, кто организует доставку и какие документы вы получите на выходе. Мы объясняем весь процесс и показываем расчёт до того, как вы примете решение.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq">
+  <div class="wrap wrap--narrow">
+    <div class="section__head reveal">
+      <p class="eyebrow">Вопросы и ответы</p>
+      <h2 class="section__title">Что обычно спрашивают</h2>
+    </div>
+
+    <div class="faq" id="faqList">
+      <div class="faq__item reveal">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Сколько времени занимает привоз автомобиля?</span>
+          <svg viewBox="0 0 24 24" class="faq__chevron" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq__a"><p>Ориентировочно от полутора до двух с половиной месяцев с момента выкупа: подбор и проверка, выкуп, морская доставка, оформление и доставка по России. Точные сроки зависят от загруженности портов, выбранного варианта учёта и вашего города — называем их до начала работы.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Нужна ли предоплата и как проходит оплата?</span>
+          <svg viewBox="0 0 24 24" class="faq__chevron" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq__a"><p>Схему оплаты проговариваем заранее и по шагам: кто продавец, как и когда вносятся средства, что происходит на каждом этапе. Вы не переводите деньги «в никуда» — до оплаты у вас на руках расчёт и понимание всего процесса.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Можно ли посмотреть машину до покупки?</span>
+          <svg viewBox="0 0 24 24" class="faq__chevron" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq__a"><p>Да — перед выкупом присылаем подробный видеообзор конкретного автомобиля: кузов, салон, комплектация, а также информацию о состоянии и истории. Решение о покупке вы принимаете, уже увидев машину.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Чем киргизский учёт отличается от российского?</span>
+          <svg viewBox="0 0 24 24" class="faq__chevron" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq__a"><p>При российском учёте автомобиль полностью растамаживается и получает российские номера и документы. При киргизском — машина оформляется в Кыргызстане и приезжает к вам на киргизских номерах; итоговая сумма часто получается заметно ниже. У каждого варианта свои нюансы по эксплуатации и документам — разберём их применительно к вашей ситуации до начала работы.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Помогаете с документами и видом на жительство?</span>
+          <svg viewBox="0 0 24 24" class="faq__chevron" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq__a"><p>Да. При оформлении на киргизский учёт ведём вас по всем нужным документам, включая вид на жительство. Это входит в услугу — искать отдельных посредников не придётся.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Работаете только по Уфе?</span>
+          <svg viewBox="0 0 24 24" class="faq__chevron" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq__a"><p>Базируемся в Уфе и активно работаем по Башкортостану и соседним регионам, но возим по всей России. Доставку до вашего города включаем в расчёт сразу, чтобы итоговая сумма была честной.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Какой бюджет нужен для старта?</span>
+          <svg viewBox="0 0 24 24" class="faq__chevron" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq__a"><p>Работаем с разными марками и бюджетами — от 1 000 000 ₽ под ключ. Напишите желаемую машину и сумму, и мы покажем, что реально можно привезти именно в ваш бюджет.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КОНТАКТЫ ================= -->
+<section class="section section--alt" id="contacts">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Контакты</p>
+      <h2 class="section__title">Напишите — посчитаем бесплатно</h2>
+    </div>
+
+    <div class="contacts">
+      <div class="contacts__main reveal">
+        <a class="contact contact--tg" href="https://t.me/yangirovvv_1" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="contact__ico" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.3-.1-.5-.6-.2L6.2 13.1l-4.8-1.5c-1-.3-1.1-1 .2-1.5L20.5 2.8c.9-.3 1.6.2 1.4 1.5z"/></svg>
+          <span class="contact__text">
+            <b>Написать Аршату</b>
+            <span>@yangirovvv_1 — ответим и посчитаем ваш вариант</span>
+          </span>
+          <svg viewBox="0 0 24 24" class="contact__arrow" aria-hidden="true"><path d="M5 12h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <a class="contact" href="https://t.me/korea_auto02" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="contact__ico" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.3-.1-.5-.6-.2L6.2 13.1l-4.8-1.5c-1-.3-1.1-1 .2-1.5L20.5 2.8c.9-.3 1.6.2 1.4 1.5z"/></svg>
+          <span class="contact__text">
+            <b>Telegram-канал</b>
+            <span>@korea_auto02 — реальные авто и расчёты</span>
+          </span>
+          <svg viewBox="0 0 24 24" class="contact__arrow" aria-hidden="true"><path d="M5 12h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <!-- ЗАМЕНИТЬ: раскомментируйте блок ниже и подставьте номер телефона
+        <a class="contact" href="tel:+79000000000">
+          <svg viewBox="0 0 24 24" class="contact__ico" aria-hidden="true"><path d="M6.6 3h3l1.5 4-2 1.5a13 13 0 0 0 6.4 6.4l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.2 2 2 0 0 1 6.6 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <span class="contact__text"><b>Телефон</b><span>+7 900 000-00-00</span></span>
+          <svg viewBox="0 0 24 24" class="contact__arrow" aria-hidden="true"><path d="M5 12h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        -->
+
+        <!-- ЗАМЕНИТЬ: раскомментируйте блок ниже и подставьте номер WhatsApp в формате 79000000000
+        <a class="contact contact--wa" href="https://wa.me/79000000000" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="contact__ico" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a12 12 0 0 1-6.1-5.3c-.5-.8-.8-1.7-.8-2.6 0-.9.5-1.4.7-1.6.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.5c-.1.2-.3.3-.1.6a9 9 0 0 0 3.6 3.1c.3.2.5.1.6 0l.8-.9c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.3v.6z"/></svg>
+          <span class="contact__text"><b>WhatsApp</b><span>Написать в чат</span></span>
+          <svg viewBox="0 0 24 24" class="contact__arrow" aria-hidden="true"><path d="M5 12h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        -->
+
+        <!-- ЗАМЕНИТЬ: раскомментируйте блок ниже и подставьте ссылку на Instagram
+        <a class="contact" href="https://instagram.com/username" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="contact__ico" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+          <span class="contact__text"><b>Instagram</b><span>Фото привезённых автомобилей</span></span>
+          <svg viewBox="0 0 24 24" class="contact__arrow" aria-hidden="true"><path d="M5 12h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        -->
+      </div>
+
+      <aside class="contacts__aside reveal">
+        <h3>Что прислать для расчёта</h3>
+        <ol class="numlist">
+          <li>Желаемую машину</li>
+          <li>Желаемый год</li>
+          <li>Максимальный бюджет</li>
+        </ol>
+        <p class="contacts__note">
+          Посчитаем варианты бесплатно и покажем полную стоимость под ключ до вашего города.
+        </p>
+        <div class="contacts__geo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          Уфа · Башкортостан · по всей России
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= ФУТЕР ================= -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <span class="brand__name">FATUM AUTO</span>
+      <span class="footer__tag">Автомобили из Кореи под ключ</span>
+    </div>
+    <nav class="footer__nav" aria-label="Ссылки в подвале">
+      <a href="#services">Услуги</a>
+      <a href="#registration">Оформление</a>
+      <a href="#cases">Примеры</a>
+      <a href="#calc">Расчёт</a>
+      <a href="https://t.me/korea_auto02" target="_blank" rel="noopener">Канал</a>
+      <a href="https://t.me/yangirovvv_1" target="_blank" rel="noopener">Написать</a>
+    </nav>
+    <p class="footer__copy">© <span id="year">2026</span> FATUM AUTO · Аршат</p>
+  </div>
+</footer>
+
+<a class="fab" href="https://t.me/yangirovvv_1" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.3-.1-.5-.6-.2L6.2 13.1l-4.8-1.5c-1-.3-1.1-1 .2-1.5L20.5 2.8c.9-.3 1.6.2 1.4 1.5z"/></svg>
+</a>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
