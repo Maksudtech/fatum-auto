@@ -664,6 +664,28 @@ strong, b { font-weight: 600; color: var(--text); }
   color: var(--accent-2);
 }
 
+/* Одна карточка в сетке на две колонки: раскладываем её по горизонтали,
+   иначе она заняла бы половину ряда, а рядом осталась бы пустота */
+.grid--2 > .case:only-child {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  grid-template-rows: auto 1fr;
+}
+.grid--2 > .case:only-child .case__media { grid-column: 1; grid-row: 1; }
+.grid--2 > .case:only-child .case__strip {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+  border-bottom: none;
+  border-top: 1px solid var(--border);
+}
+.grid--2 > .case:only-child .case__body {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  border-left: 1px solid var(--border);
+}
+
 .case__body { padding: 28px; display: flex; flex-direction: column; flex: 1; }
 .case__head {
   display: flex;
@@ -1135,6 +1157,19 @@ strong, b { font-weight: 600; color: var(--text); }
   .grid--2 { grid-template-columns: 1fr; }
   .tips .tip--wide { grid-column: auto; }
   .case__media { aspect-ratio: 16 / 10; }
+
+  /* Узкий экран — возвращаем одиночную карточку в одну колонку */
+  .grid--2 > .case:only-child { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; }
+  .grid--2 > .case:only-child .case__media,
+  .grid--2 > .case:only-child .case__strip,
+  .grid--2 > .case:only-child .case__body { grid-column: 1; }
+  .grid--2 > .case:only-child .case__media { grid-row: 1; }
+  .grid--2 > .case:only-child .case__strip {
+    grid-row: 2;
+    border-top: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .grid--2 > .case:only-child .case__body { grid-row: 3; border-left: none; }
 }
 
 @media (max-width: 640px) {
